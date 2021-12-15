@@ -7,15 +7,15 @@ public class ATM {
             if (sum - banknotes[i] < 0) {
                 i++;
             }
-                if (sum - banknotes[i] >= 0) {
+            if (sum - banknotes[i] >= 0) {
                 count += 1;
                 sum -= banknotes[i];
                     if (sum - banknotes[i] == 0){
                         count +=1;
                         break;
                     }
-                }
             }
+        }
         return count;
     }
     public static void main(String[] args) {
